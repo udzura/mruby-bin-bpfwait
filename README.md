@@ -1,27 +1,16 @@
-# mruby-bin-bpfwait   [![Build Status](https://travis-ci.org/udzura/mruby-bin-bpfwait.svg?branch=master)](https://travis-ci.org/udzura/mruby-bin-bpfwait)
-BinBpfwait class
-## install by mrbgems
-- add conf.gem line to `build_config.rb`
+# bpfwait [![Build Status](https://travis-ci.org/udzura/mruby-bin-bpfwait.svg?branch=master)](https://travis-ci.org/udzura/mruby-bin-bpfwait)
 
-```ruby
-MRuby::Build.new do |conf|
+A simple cli tool to wait a processe invoke eBPF events(kprobe, uprobe, tracepoint, syscalls...)
 
-    # ... (snip) ...
+## Build it
 
-    conf.gem :github => 'udzura/mruby-bin-bpfwait'
-end
 ```
-## example
-```ruby
-p BinBpfwait.hi
-#=> "hi!!"
-t = BinBpfwait.new "hello"
-p t.hello
-#=> "hello"
-p t.bye
-#=> "hello bye"
+$ git clone https://github.com/udzura/mruby-bin-bpfwait.git
+$ cd mruby-bin-bpfwait && rake
 ```
 
 ## License
+
 under the MIT License:
+
 - see LICENSE file
