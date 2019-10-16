@@ -1,0 +1,7 @@
+name: mruby-bin-bpfwait
+description: BinBpfwait class
+author: Uchio Kondo
+website: https://github.com/udzura/mruby-bin-bpfwait
+protocol: git
+repository: https://github.com/udzura/mruby-bin-bpfwait.git
+license: MIT
